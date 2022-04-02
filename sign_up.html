@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="assets/css/form-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="form">
+        <div class="form__wrapper">
+            <div class="form__container">
+                <div class="form__nav">
+                    <div class="logo">
+                        <img src="./assets/img/Logo.png" class="logo__img" alt="Fusely" srcset=""></div>
+                    <a href="./index.html"> <button class="button"> Home </button></a>
+                </div>
+                <div class="row clearfix">
+
+                    <form id="user_form">
+
+                        <div class="input"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                            <input type="text" name="name" class="name" placeholder=" Name" />
+
+                        </div>
+
+                        <div class="input"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                            <input type="text" name="name" class="user_name" placeholder="Username" required />
+
+                        </div>
+                        <div class="input"> <span><i aria-hidden="true" class="fa fa-phone"></i></span>
+                            <input type="number" name="number" class="phone_number" placeholder="Phone Number" required />
+                        </div>
+                        <div class="input select__option"><span><i class="fa fa-address-card" aria-hidden="true"></i></span>
+                            <select type="address" id="state" class="state" name="State" placeholder="Select State"></select>
+                            <div class="select__arrow"></div>
+                        </div>
+                        <div class="input select__option"><span><i class="fa fa-address-card" aria-hidden="true"></i></span>
+                            <select type="address" class="district" name="District" id="district" placeholder="Select District"></select>
+                            <div class="select__arrow"></div>
+                        </div>
+                        <div class="input"> <span><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                            <textarea name="about" class="about" placeholder="Describe yourself here..." id="" cols="30" rows="10">
+                               
+                           </textarea>
+                        </div>
+                        <div class="input"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                            <input type="password" class="password" id="password" name="password" placeholder="Password" required />
+                        </div>
+                        <div class="input"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                            <input type="password" class="confirm_password" id="confirm-password" name="password" placeholder="Re-type Password" required />
+                        </div>
+
+                        <div class="input radio-option">
+                            <input type="radio" class="gender" name="gender" value="male" id="rd1">
+                            <label for="rd1">Male</label>
+                            <input type="radio" class="gender" name="gender" value="female" id="rd2">
+                            <label for="rd2">Female</label>
+                        </div>
+
+                        <div class="input checkbox-option">
+                            <input type="checkbox" id="cb1">
+                            <label for="cb1">I agree with the terms of use and Policy</label>
+                        </div>
+
+                        <input class="button register" type="submit" value="Register" onclick="matchPassword()" />
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/form-script.js"></script>
+
+
+</body>
+
+</html>
